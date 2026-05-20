@@ -37,8 +37,8 @@ const DUBHE_CONFIG: DubheConfig = {
   metadata: contractMetadata as unknown as SuiMoveNormalizedModules,
   dubheMetadata,
   endpoints: {
-    graphql: 'http://localhost:4000/graphql',
-    websocket: 'ws://localhost:4000/graphql'
+    graphql: 'https://farm-graphql.obelisk.build/graphql',
+    websocket: 'wss://farm-graphql.obelisk.build/graphql'
   },
   options: {
     enableBatchOptimization: true,
