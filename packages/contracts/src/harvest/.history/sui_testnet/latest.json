@@ -1,12 +1,12 @@
 {
   "projectName": "harvest",
   "network": "testnet",
-  "startCheckpoint": "338681845",
-  "packageId": "0x8c9e060966896b8bf48aa296f33a948bb54244f8e68ff07b198206a035b50638",
-  "originalPackageId": "0x8c9e060966896b8bf48aa296f33a948bb54244f8e68ff07b198206a035b50638",
+  "startCheckpoint": "339021997",
+  "packageId": "0xf595bf753820e8e14eece4cc76778abb9170b5c29325da8aa8ec2ac145900fee",
+  "originalPackageId": "0xf595bf753820e8e14eece4cc76778abb9170b5c29325da8aa8ec2ac145900fee",
   "dappHubId": "0x12a319387cf2d465d4f4181523d089a368e542fccbdd878e70a4db0df007bb78",
-  "dappStorageId": "0x37960590f9993471895617fac3e79551f4fdaeb759d7eaa00008a9e9122c3f4f",
-  "upgradeCap": "0x14d109ec414dacce9aadb6509b484b1fbcb55aa497631666eaad538652deeb19",
+  "dappStorageId": "0x4e783c5948cc8131b9fd649d7016c43155b3edb2743bb0ac11bc06e3072df7a6",
+  "upgradeCap": "0x26f8556637c4145916be9a8683f2c298058402be1a532cf264bb5fd076db7077",
   "version": 1,
   "resources": {
     "gold": {
