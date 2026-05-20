@@ -1,0 +1,588 @@
+{
+  "resources": [
+    {
+      "gold": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "wheat_seed": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "corn_seed": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "carrot_seed": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "pumpkin_seed": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "wheat": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "corn": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "carrot": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "pumpkin": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "farm_plot": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "plot_id": "u8"
+          },
+          {
+            "crop_type": "u8"
+          },
+          {
+            "count": "u64"
+          },
+          {
+            "planted_at": "u64"
+          },
+          {
+            "harvest_at": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id",
+          "plot_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "crow_charges": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "count": "u8"
+          },
+          {
+            "last_refill_at": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "scarecrow": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "active_until": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "crow_damage": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "expires_at": "u64"
+          },
+          {
+            "damage_pct": "u8"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "profile": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "total_earned": "u64"
+          },
+          {
+            "plots_owned": "u8"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "season_stats": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "earned_this_season": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "common_egg": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "rare_egg": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "seasonal_egg": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "amount": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "pet_hatch": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "egg_type": "u8"
+          },
+          {
+            "hatch_at": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "pet": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "pet_id": "address"
+          },
+          {
+            "species": "u8"
+          },
+          {
+            "rarity": "u8"
+          },
+          {
+            "level": "u8"
+          },
+          {
+            "xp": "u32"
+          },
+          {
+            "happiness": "u8"
+          },
+          {
+            "satiety": "u8"
+          },
+          {
+            "fed_at": "u64"
+          },
+          {
+            "born_at": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id",
+          "pet_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "pet_slot_index": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "slot": "u8"
+          },
+          {
+            "pet_id": "address"
+          }
+        ],
+        "keys": [
+          "entity_id",
+          "slot"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "pet_slots": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "slots_owned": "u8"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "season_config": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "season_id": "u8"
+          },
+          {
+            "end_ms": "u64"
+          },
+          {
+            "bonus_crop": "u8"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "shop_config": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "wheat_seed_price": "u64"
+          },
+          {
+            "corn_seed_price": "u64"
+          },
+          {
+            "carrot_seed_price": "u64"
+          },
+          {
+            "pumpkin_seed_price": "u64"
+          },
+          {
+            "extra_plot_price": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "pet_config": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "common_egg_price": "u64"
+          },
+          {
+            "rare_egg_price": "u64"
+          },
+          {
+            "seasonal_egg_price": "u64"
+          },
+          {
+            "common_hatch_ms": "u64"
+          },
+          {
+            "rare_hatch_ms": "u64"
+          },
+          {
+            "seasonal_hatch_ms": "u64"
+          },
+          {
+            "slot2_price": "u64"
+          },
+          {
+            "slot3_price": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "world_permit_id": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "object_id": "address"
+          }
+        ],
+        "keys": [
+          "entity_id"
+        ],
+        "offchain": false
+      }
+    },
+    {
+      "trophy": {
+        "fields": [
+          {
+            "entity_id": "String"
+          },
+          {
+            "season": "u8"
+          },
+          {
+            "rank": "u32"
+          },
+          {
+            "total_earned": "u64"
+          }
+        ],
+        "keys": [
+          "entity_id",
+          "season"
+        ],
+        "offchain": false
+      }
+    }
+  ],
+  "objects": [],
+  "scenes": [],
+  "permits": [
+    {
+      "world": {}
+    }
+  ],
+  "enums": [
+    {
+      "CropType": [
+        "Carrot",
+        "Corn",
+        "None",
+        "Pumpkin",
+        "Wheat"
+      ]
+    },
+    {
+      "PetSpecies": [
+        "Bunny",
+        "Chick",
+        "Deer",
+        "Dragon",
+        "Fox",
+        "None"
+      ]
+    },
+    {
+      "PetRarity": [
+        "Common",
+        "Rare",
+        "Uncommon"
+      ]
+    },
+    {
+      "EggType": [
+        "Common",
+        "None",
+        "Rare",
+        "Seasonal"
+      ]
+    }
+  ],
+  "original_package_id": "0x8c9e060966896b8bf48aa296f33a948bb54244f8e68ff07b198206a035b50638",
+  "dubhe_object_id": "0x12a319387cf2d465d4f4181523d089a368e542fccbdd878e70a4db0df007bb78",
+  "original_dubhe_package_id": "0x89302436f6624fb9274ab0126737a599cb154b008687d71f6d8ce9e0d22ec3ce",
+  "dapp_key": "8c9e060966896b8bf48aa296f33a948bb54244f8e68ff07b198206a035b50638::dapp_key::DappKey",
+  "start_checkpoint": "338681845",
+  "package_ids": [
+    "0x8c9e060966896b8bf48aa296f33a948bb54244f8e68ff07b198206a035b50638"
+  ],
+  "dapp_storage_id": "0x37960590f9993471895617fac3e79551f4fdaeb759d7eaa00008a9e9122c3f4f"
+}

@@ -1,0 +1,247 @@
+{
+  "projectName": "harvest",
+  "network": "localnet",
+  "startCheckpoint": "310",
+  "packageId": "0xcad29fc736a2290689bc2ef59d12a41d31b1d3eee4941e15e975bcc93b79ea15",
+  "originalPackageId": "0xcad29fc736a2290689bc2ef59d12a41d31b1d3eee4941e15e975bcc93b79ea15",
+  "dappHubId": "0x34df007564bbc12e64ede1ca7c9c2edc5e4a67795264c4c79c9e181833859a78",
+  "frameworkPackageId": "0x6108861c9d559d5accb8250a882754b3b708ebf19d992b78991ce970a48844d7",
+  "dappStorageId": "0xa407026391920cf6fdf77bfebdc50e6e4bfa5c96c67b950561ba71b81ce3404e",
+  "upgradeCap": "0x95d3d16175a69749a78596116e44c69539d52ab6cc0a3352a5d80406785a7518",
+  "version": 1,
+  "resources": {
+    "gold": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true
+    },
+    "wheat_seed": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true
+    },
+    "corn_seed": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true
+    },
+    "carrot_seed": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true
+    },
+    "pumpkin_seed": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true
+    },
+    "wheat": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true,
+      "listable": true
+    },
+    "corn": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true,
+      "listable": true
+    },
+    "carrot": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true,
+      "listable": true
+    },
+    "pumpkin": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true,
+      "listable": true
+    },
+    "farm_plot": {
+      "fields": {
+        "plot_id": "u8",
+        "crop_type": "u8",
+        "count": "u64",
+        "planted_at": "u64",
+        "harvest_at": "u64"
+      },
+      "keys": [
+        "plot_id"
+      ]
+    },
+    "crow_charges": {
+      "fields": {
+        "count": "u8",
+        "last_refill_at": "u64"
+      }
+    },
+    "scarecrow": {
+      "fields": {
+        "active_until": "u64"
+      }
+    },
+    "crow_damage": {
+      "fields": {
+        "expires_at": "u64",
+        "damage_pct": "u8"
+      },
+      "reactive": true
+    },
+    "profile": {
+      "fields": {
+        "total_earned": "u64",
+        "plots_owned": "u8"
+      }
+    },
+    "season_stats": {
+      "fields": {
+        "earned_this_season": "u64"
+      }
+    },
+    "common_egg": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true,
+      "listable": true
+    },
+    "rare_egg": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true,
+      "listable": true
+    },
+    "seasonal_egg": {
+      "fields": {
+        "amount": "u64"
+      },
+      "fungible": true,
+      "listable": true
+    },
+    "pet_hatch": {
+      "fields": {
+        "egg_type": "u8",
+        "hatch_at": "u64"
+      }
+    },
+    "pet": {
+      "fields": {
+        "pet_id": "address",
+        "species": "u8",
+        "rarity": "u8",
+        "level": "u8",
+        "xp": "u32",
+        "happiness": "u8",
+        "satiety": "u8",
+        "fed_at": "u64",
+        "born_at": "u64"
+      },
+      "keys": [
+        "pet_id"
+      ],
+      "listable": true
+    },
+    "pet_slot_index": {
+      "fields": {
+        "slot": "u8",
+        "pet_id": "address"
+      },
+      "keys": [
+        "slot"
+      ]
+    },
+    "pet_slots": {
+      "fields": {
+        "slots_owned": "u8"
+      }
+    },
+    "season_config": {
+      "global": true,
+      "fields": {
+        "season_id": "u8",
+        "end_ms": "u64",
+        "bonus_crop": "u8"
+      }
+    },
+    "shop_config": {
+      "global": true,
+      "fields": {
+        "wheat_seed_price": "u64",
+        "corn_seed_price": "u64",
+        "carrot_seed_price": "u64",
+        "pumpkin_seed_price": "u64",
+        "extra_plot_price": "u64"
+      }
+    },
+    "pet_config": {
+      "global": true,
+      "fields": {
+        "common_egg_price": "u64",
+        "rare_egg_price": "u64",
+        "seasonal_egg_price": "u64",
+        "common_hatch_ms": "u64",
+        "rare_hatch_ms": "u64",
+        "seasonal_hatch_ms": "u64",
+        "slot2_price": "u64",
+        "slot3_price": "u64"
+      }
+    },
+    "world_permit_id": {
+      "global": true,
+      "fields": {
+        "object_id": "address"
+      }
+    },
+    "trophy": {
+      "fields": {
+        "season": "u8",
+        "rank": "u32",
+        "total_earned": "u64"
+      },
+      "keys": [
+        "season"
+      ],
+      "listable": true
+    }
+  },
+  "enums": {
+    "CropType": [
+      "None",
+      "Wheat",
+      "Corn",
+      "Carrot",
+      "Pumpkin"
+    ],
+    "PetSpecies": [
+      "None",
+      "Bunny",
+      "Chick",
+      "Fox",
+      "Deer",
+      "Dragon"
+    ],
+    "PetRarity": [
+      "Common",
+      "Uncommon",
+      "Rare"
+    ],
+    "EggType": [
+      "None",
+      "Common",
+      "Rare",
+      "Seasonal"
+    ]
+  }
+}

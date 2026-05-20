@@ -1,0 +1,23 @@
+{
+  "projectName": "counter",
+  "network": "localnet",
+  "startCheckpoint": "152",
+  "packageId": "0xf9ed1eb340feef0c9c576450fea9895c94b00d636f329cbb618809afad30b1e9",
+  "dappHubId": "0xa5993c7c817169d64272e8b2537c225e59724fcd9165107c95d0154d5e756e9f",
+  "frameworkPackageId": "0x954337de6806ee3122d2c6058af41ff4749aa92f8cad1d6963647b6f19f22101",
+  "dappStorageId": "0x0142b62a6dd1d38c6129e61a3dfc19e455ffb435a65e7b46204543c4edc48063",
+  "upgradeCap": "0x6509bc4f105818eb37caf80c891399f2ecdec2a05e8356fd158a297922c45c75",
+  "version": 1,
+  "resources": {
+    "counter1": "u32",
+    "counter2": {
+      "fields": {
+        "value": "u32",
+        "data": "u64"
+      },
+      "keys": [
+        "data"
+      ]
+    }
+  }
+}
